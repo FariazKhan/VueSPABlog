@@ -1,0 +1,13 @@
+<div class="text-center pt-16 md:pt-32">
+		<p class="text-sm md:text-base text-green-500 font-bold">
+            <!-- creationDate slot -->
+            <slot name="creationDate"></slot>
+            <span class="text-gray-900">/</span>
+            <!-- authorName slot -->
+            <slot name="authorName"></slot>
+
+        </p>
+		<h1 class="font-bold break-normal text-3xl md:text-5xl">
+            <slot name="postTitle"></slot>
+        </h1>
+	</div>
