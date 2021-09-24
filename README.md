@@ -17,5 +17,5 @@ TechPost is a minimalistic single page blog application, which comes with an adm
  - Post, Category & Page management with soft-delete feature
  - Posts are displayed in one, two or three columns dynamically, depending on their numbers
  - Uses CKEditor for rich text editing in posts and pages
- <br />
+
  ![enter image description here](https://i.ibb.co/gRTrHH8/Techpost-admin.jpg)
