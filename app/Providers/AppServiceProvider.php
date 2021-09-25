@@ -25,7 +25,15 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $blog_settings = BlogSettings::find(1);
-        View::share('blog_settings', $blog_settings);
+        if(Schema::hasTable('blog-settings'))
+        {
+            $blog_settings = BlogSettings::find(1);
+            View::share('blog_settings', $blog_settings);
+        }
+        else
+        {
+            $blog_settings = [];
+            View::share('blog_settings', $blog_settings);
+        }
     }
 }
